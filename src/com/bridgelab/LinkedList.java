@@ -17,6 +17,15 @@ public class LinkedList {
 			currentNode.next=node;
 			}
 			}
+	// adding with to first node with 56,30,70
+	public void addFirst(int data) {
+		Node node=new Node();
+		node.data=data;
+		node.next=null;
+		node.next=head;
+		head=node;
+		}
+	
 	       void display() {
 	    	Node node=head;
 	    	while(node.next!=null) {
