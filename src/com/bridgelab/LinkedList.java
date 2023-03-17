@@ -39,11 +39,16 @@ public class LinkedList {
 			for (int i = 0; i < index - 1; i++) {
 				currentPosition = currentPosition.next;
 			}
-			    node.next=currentPosition.next;
-				currentPosition.next = node;
+			node.next = currentPosition.next;
+			currentPosition.next = node;
 
-			
 		}
+	}
+	void deleteFirst() {
+		if(head==null) {
+			return;
+		}
+		head=head.next;
 	}
 
 	void display() {
