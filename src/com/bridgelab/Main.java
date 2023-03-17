@@ -8,8 +8,8 @@ public class Main {
 		ll.add(30);
 		ll.add(70);
 	    ll.display();
-	    System.out.println("after deletion in first position");
-	    ll.deleteFirst();
+	    System.out.println("after deletion in last position");
+	    ll.deleteLast();
 	    ll.display();
 
 	}

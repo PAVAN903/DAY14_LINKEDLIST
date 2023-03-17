@@ -44,11 +44,29 @@ public class LinkedList {
 
 		}
 	}
+
 	void deleteFirst() {
-		if(head==null) {
+		if (head == null) {
 			return;
 		}
-		head=head.next;
+		head = head.next;
+	}
+
+	public void deleteLast() {
+		if (head == null) {
+			return;
+		}
+		if (head == null) {
+			head = null;
+			return;
+		}
+		Node secondLast=head;
+		Node lastNode=head.next;
+		while(lastNode.next!=null) {
+			lastNode=lastNode.next;
+			secondLast=secondLast.next;
+			}
+		secondLast.next=null;
 	}
 
 	void display() {
